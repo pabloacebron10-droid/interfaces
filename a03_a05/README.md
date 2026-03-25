@@ -41,31 +41,6 @@ En el método principal (`main`), se agrupan los distintos tipos de notificació
 
 ---
 
-## Actividad 4: Dispositivos de Oficina
-
-### Descripción
-
-Se modelan dispositivos de oficina con distintas capacidades utilizando interfaces para definir comportamientos específicos.
-
-### Implementación
-
-Se crean las siguientes interfaces:
-
-* `Imprimible`, que define el método `imprimir()`
-* `Escaneable`, que define el método `escanear()`
-* `Multifuncion`, que hereda de ambas interfaces
-
-Se implementan dos clases:
-
-* `ImpresoraBasica`, que implementa únicamente la interfaz `Imprimible`
-* `ImpresoraAvanzada`, que implementa la interfaz `Multifuncion`
-
-### Restricciones del compilador
-
-La clase `ImpresoraBasica` no implementa la interfaz `Escaneable`, por lo que no dispone del método `escanear()`. Intentar invocar este método sobre una instancia de esta clase genera un error de compilación, ya que incumple el contrato definido por las interfaces.
-
----
-
 ## Actividad 5: Notificación Temporal
 
 ### Descripción
